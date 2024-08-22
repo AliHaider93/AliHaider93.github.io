@@ -32,8 +32,8 @@ The elemntary implementation of the k-g converter was able to handle shell eleme
 #### Radnom coloring of the parts: 
 Considering that each part in a .k file is repersented as a region in .g file. If the all the regions had the same color the resulting converted model is hard to see clearly. To avoid this issue a random coloring was implemented for each reagion. in the follwoing you can see the difference between a model with only one color and a model after the implementation of the random coloring.
 
-<img src="/car1color.png" width="500" height="500">
-<img src="/carRandColor.png" width="500" height="500">
+<img src="/car1color.png" width="1000" height="500">
+<img src="/carRandColor.png" width="1000" height="500">
 
 
 
