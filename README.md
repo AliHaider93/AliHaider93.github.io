@@ -9,8 +9,13 @@ The goal of the project is to creat a converter from LS-DYNA .k files to BRL-CAD
 #### Empty Database Error:
 In the old (k-g) converter there was an issue with converting a .k file related to ifstream::tellg() returning a wrong position in the ASCII file. The solution was to open the input file (.k) as binary file. The pull request for this bug fix is provided in this link <[patch](https://github.com/BRL-CAD/brlcad/pull/118).
 
-#### LS-DYNA Part Made out only of Triangles 
-and old piece of code was left in the new k-g converter. in this code when a the converter encounters a trianlge, it tries to go back to the privous part. This code was erronous considering that an LS-DYNA part can contain shell elements which could be quadrilaterals or Triagles or any other available type of shell elements. The fix is provided in the following link <[update k-g.cpp](https://github.com/BRL-CAD/brlcad/pull/134)
+#### LS-DYNA Part Made out only of Triangles: 
+an old piece of code was left in the new k-g converter. in this code when a the converter encounters a trianlge, it tries to go back to the privous part. This code was erronous considering that an LS-DYNA part can contain shell elements which could be quadrilaterals or Triagles or any other available type of shell elements. Another issue was that if the converter is in the first part and it tries to go back to the privous part it will find nothing and it will attempt to read a piece of memory which is not allocated.
+The fix is provided in the following link <[update k-g.cpp](https://github.com/BRL-CAD/brlcad/pull/134)
 
+### Developments:
+
+#### Handling LS-DYNA command *PART_ADAPTIVE_FAILURE:
+In LS-DYNA a model is devided into parts, these parts contain information about finite elements and there properties. The LS-DYNA part is connected to a certain mesh, and this mesh can be changed during the analysis. This feature is implemented in LS-DYNA through the command *PART_ADAPTIVE_FAILUR. Considering the importance of this information related to adaptive meshing of a part at a certain point in time. we have implemented this command as an attribute for the reagion where the part exists. This implementation is of interest in case one wants to convert the .g file file back to a .k file and it allowes the perservation of this important information. The pull request related to this development can be found in the following link <[*PART_ADAPTIVE_FAILURE](https://github.com/BRL-CAD/brlcad/pull/142).
 
 ![bumper](https://github.com/AliHaider93/AliHaider93.github.io/blob/main/bumper.png){617x272}
