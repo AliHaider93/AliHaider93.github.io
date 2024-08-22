@@ -28,6 +28,7 @@ The keywords in .k file are case insensitve, hence we have included a code to ha
 #### Solid Elements and Geometry Class: 
 The elemntary implementation of the k-g converter was able to handle shell elements. I have worked on develping the Solid element. intially the elements had to be read from the .k file then the information should be stored in an intermediat data structure, for which I have developped the Arbs class. This pull request was adabted to handle different kinds of solid elements, the traditional Hex8 element was implemented as arb8 on brlcad side. other elemetnts are handled with arb7 for 7 nodes solid element, arb6 for six nodes solid element, arb5 for 5 nodes solid element and arb4 is still under development. Additionally the Geometry class was develpped to include the Bot class and the Arbs class. This development allowed the conversion of any model that contains solid elements. as show in the following image 
 <img src="/beam.png" width="879" height="494">
+*Solid elements converted from .k file to BRL-CAD database*
 
 
 
