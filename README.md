@@ -18,9 +18,10 @@ The fix is provided in the following link <[update k-g.cpp](https://github.com/B
 #### Handling LS-DYNA command *PART_ADAPTIVE_FAILURE:
 In LS-DYNA a model is devided into parts, these parts contain information about finite elements and there properties. The LS-DYNA part is connected to a certain mesh, and this mesh can be changed during the analysis. This feature is implemented in LS-DYNA through the command *PART_ADAPTIVE_FAILUR. Considering the importance of this information related to adaptive meshing of a part at a certain point in time. we have implemented this command as an attribute for the reagion where the part exists. This implementation is of interest in case one wants to convert the .g file file back to a .k file and it allowes the perservation of this important information. The pull request related to this development can be found in the following link <[*PART_ADAPTIVE_FAILURE](https://github.com/BRL-CAD/brlcad/pull/142).
 The following image showes how one can check for such attribute in a region on MGED
-![attributes](/attr.png){617x272}
+![attributes](/attr.png | width 200)
 
-
+#### Reading Format: 
+There are mutliple formats for a .k file, the first issue was encountered reading nodes coordinates in a .k file. The initial assumption was to consider space separated values. This was a wrong assumption considering that a .k file has three types of format fixed format (comma separated), free format ( known number of characters for each field), and I10 format. 
 
 
 
