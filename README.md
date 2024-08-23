@@ -38,4 +38,13 @@ Considering that each part in a .k file is represented as a region in a .g file.
 <img src="/carRandColor.png" width="1000" height="500">
 *Car model with random coloring*
 
+#### systematic implementation of commands and options: 
+Considering the huge amount of commands and there corresponding options in LS-DYNA, an approach that realies on converting example .k files and fixing the error is bound to be inefficient, hence I have started to implement all available commands and there corresponding options in a systematic way relying on LS-DYNA documentations. The follwoing pull request <[commands and options](https://github.com/BRL-CAD/brlcad/pull/151) has been opened to handle the follwoing issues: 
++ Distinction btween command and its options
++ Implementaion of beam element and its options on the parser's side
++ Implementation of pulley element on the parser's side
++ Implementation of beam source element on the parser's side
++ Implementaion of the bearing element on the parser's side
++ Implementaion of the \*SECTION_BEAM command on the parser's side
++  
 
