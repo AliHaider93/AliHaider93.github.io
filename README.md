@@ -105,6 +105,7 @@ A beam in LS-DYNA can have diffrent kinds of cross section, in order to represen
 
 The beam with SECTION_01: I - Shape is under development. The following image shows the sketch of the cross-section in .g database 
 <img src="/IBeam.png" width="761" height="829">
+
 *SECTION_01 : I - Shape*
 
 ## TO DO:
