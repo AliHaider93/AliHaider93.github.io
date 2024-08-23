@@ -35,6 +35,8 @@ Considering that each part in a .k file is represented as a region in a .g file.
 
 <img src="/car1color.png" width="1000" height="500">
 *Car model with one color*
+
+s
 <img src="/carRandColor.png" width="1000" height="500">
 *Car model with random coloring*
 
