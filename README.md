@@ -103,12 +103,12 @@ The beam with SECTION_01: I - Shape is under development. The following image sh
 *SECTION_01 : I - Shape*
 
 ## TO DO:
-The project is not finished by anymeans there are still a substantial amount of work to do. 
-Here is a preliminary to do list:
-+ The command *INCLUDE_TRANSFORM should be implemented, because it constitute an important feture of LS-DYNA where you can combine several .k file without having an overlap of elements IDs or there positions in space.
-+ The implementation of elements and sections is half way through and more work has to be done on the BRL-CAD side, like the implemntation of element pulley and element bearing 
+The project is not finished by any means there is still a substantial amount of work to do. 
+Here is a preliminary to-do list:
++ The command *INCLUDE_TRANSFORM should be implemented, because it constitutes an important feature of LS-DYNA where you can combine several .k files without having an overlap of elements IDs or their positions in space.
++ The implementation of elements and sections is halfway through and more work has to be done on the BRL-CAD side, like the implementation of the element pulley and element bearing 
 + A more detailed implementation of reading formats should be done. 
-+ Further testing is needed to assure the quality of the implementation.
++ Further testing is needed to ensure the quality of the implementation.
 
 ## Useful information:
 + Link to my daily blog during the coding period <[blog](https://brlcad.org/wiki/Ali_Haydar_Dev_log_2024#Coding_period)
