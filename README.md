@@ -71,7 +71,7 @@ Considering the huge amount of commands and their corresponding options in LS-DY
   + Section_Sph,
   + Section_Tshell
 + Implementation of a beam with cross-section type 1 which is a tubular cross-section on the BRL-CAD side. This beam element is represented as a pipe primitive in the BRL-CAD database.  The implementation of the pipe class is also included in this pull request. The following two images show the results of converting a part that is construde of beam elemetns with cross section type 1 from LS-DYNA to BRL-CAD
-<img src="/PipeLsDyna.png" width="1000" height="500">
+<img src="/PipeLsDyna.png" width="1000" height="800">
 *Original part in LS-DYNA*
 <img src="/pipeBrlcad.png" width="1000" height="500">
 *Converted part in BRL-CAD*
