@@ -102,3 +102,7 @@ Currently the  beam with SECTION_01 : I - Shape is in under development. The fol
 
 <img src="/IBeam.png" width="761" height="829">
 *SECTION_01 : I - Shape*
+
+## Usful information:
++ Link to my daily blog during the coding period <[blog](https://brlcad.org/wiki/Ali_Haydar_Dev_log_2024#Coding_period)
++ Link to my github account <[github](https://github.com/AliHaider93)
