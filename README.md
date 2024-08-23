@@ -53,7 +53,7 @@ Considering the huge amount of commands and there corresponding options in LS-DY
 + Implementation of pulley element on the parser's side
 + Implementation of beam source element on the parser's side
 + Implementaion of the bearing element on the parser's side
-+ Implementaion of the \*SECTION_BEAM command on the parser's side. Here is a list of the available sections
++ Implementaion of the \*SECTION command on the parser's side. Here is a list of the available sections
   + Section_Ale1d,
   + Section_Ale2d,
   + Section_Beam,
@@ -69,4 +69,5 @@ Considering the huge amount of commands and there corresponding options in LS-DY
   + Section_Sph,
   + Section_Tshell
 +  Implementaion of a beam with cross-section type 1 which is a tubular cross-section on the BRL-CAD side. I have implemnted the pipe calss to handle this beam element where this element is represented as a pipe premative in BRL-CAD .g database.
+
 
