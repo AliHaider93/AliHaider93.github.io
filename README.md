@@ -40,7 +40,7 @@ s
 <img src="/carRandColor.png" width="1000" height="500">
 *Car model with random coloring*
 
-#### Systematic implementation of commands and options: 
+#### Systematic Implementation of Commands and Options: 
 Considering the huge amount of commands and their corresponding options in LS-DYNA, an approach that relies on converting example .k files and fixing the error is bound to be inefficient, hence I have started to implement all available commands and their corresponding options in a systematic way relying on LS-DYNA documentations. The following pull request <[commands and options](https://github.com/BRL-CAD/brlcad/pull/151) has been opened to handle the following issues: 
 + Distinction between a command and its options
 + Implementation of beam element and its options on the parser's side. Here is a list of the options:
@@ -72,4 +72,30 @@ Considering the huge amount of commands and their corresponding options in LS-DY
   + Section_Tshell
 + Implementation of a beam with cross-section type 1 which is a tubular cross-section on the BRL-CAD side. This beam element is represented as a pipe primitive in the BRL-CAD database.  The implementation of the pipe class is also included in this pull request.
 
+#### Implementation of the Resultant beam:
+A beam in LS-DYNA can have diffrent kinds of cross section, in order to represent these kinds of beams in the .g database, I am working on developpin the sketch and extrude classes. The goal is to implement beam elements with the following types of cross-sections: 
 
++ SECTION_01 : I - Shape
++ SECTION_02 : Channel
++ SECTION_03 : L - Shape
++ SECTION_04 : T - Shape
++ SECTION_05 : Tubular box
++ SECTION_06 : Z - Shape
++ SECTION_07 : Trapezoidal
++ SECTION_08 : Circular
++ SECTION_09 : Tubular
++ SECTION_10 : I - Shape 2
++ SECTION_11 : Solid box
++ SECTION_12 : Cross
++ SECTION_13 : H - Shape
++ SECTION_14 : T - Shape 2
++ SECTION_15 : I - Shape 3
++ SECTION_16 : Channel 2
++ SECTION_17 : Channel 3
++ SECTION_18 : T - Shape 3
++ SECTION_19 : Box - Shape 2
++ SECTION_20 : Hexagon
++ SECTION_21 : Hat - Shape
++ SECTION_22 : Hat - Shape 2
+
+Currently the  beam with SECTION_01 : I - Shape is in under development. The following immage shoes the sketch of the cross section in .g database 
