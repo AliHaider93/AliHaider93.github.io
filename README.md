@@ -33,7 +33,7 @@ The elementary implementation of the k-g converter was able to handle shell elem
 #### Random coloring of the parts: 
 Considering that each part in a .k file is represented as a region in a .g file. If all the regions had the same color the resulting converted model is hard to see clearly. To avoid this issue random coloring was implemented for each region. In the following images, one can see the difference between a model with only one color and a model after the implementation of the random coloring. The code can be found in <[coloring](https://github.com/BRL-CAD/brlcad/pull/153)
 
-<img src="/car1color.png" width="1000" height="500">
+<img src="/car1color.png" width="1000" height="819">
 *Car model with one color*
 
 s
