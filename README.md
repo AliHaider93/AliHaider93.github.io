@@ -38,10 +38,10 @@ Considering that each part in a .k file is represented as a region in a .g file.
 <img src="/carRandColor.png" width="1000" height="500">
 *Car model with random coloring*
 
-#### systematic implementation of commands and options: 
-Considering the huge amount of commands and there corresponding options in LS-DYNA, an approach that realies on converting example .k files and fixing the error is bound to be inefficient, hence I have started to implement all available commands and there corresponding options in a systematic way relying on LS-DYNA documentations. The follwoing pull request <[commands and options](https://github.com/BRL-CAD/brlcad/pull/151) has been opened to handle the follwoing issues: 
-+ Distinction btween a command and its options
-+ Implementaion of beam element and its options on the parser's side. Here is a list of the options:
+#### Systematic implementation of commands and options: 
+Considering the huge amount of commands and their corresponding options in LS-DYNA, an approach that relies on converting example .k files and fixing the error is bound to be inefficient, hence I have started to implement all available commands and their corresponding options in a systematic way relying on LS-DYNA documentations. The following pull request <[commands and options](https://github.com/BRL-CAD/brlcad/pull/151) has been opened to handle the following issues: 
++ Distinction between a command and its options
++ Implementation of beam element and its options on the parser's side. Here is a list of the options:
   +  Option Thickness
   +  Option Scalar
   +  Option Section
@@ -52,8 +52,8 @@ Considering the huge amount of commands and there corresponding options in LS-DY
   +  Option Elbow
 + Implementation of pulley element on the parser's side
 + Implementation of beam source element on the parser's side
-+ Implementaion of the bearing element on the parser's side
-+ Implementaion of the \*SECTION command on the parser's side. Here is a list of the available sections
++ Implementation of the bearing element on the parser's side
++ Implementation of the \*SECTION command on the parser's side. Here is a list of the available sections
   + Section_Ale1d,
   + Section_Ale2d,
   + Section_Beam,
@@ -68,6 +68,6 @@ Considering the huge amount of commands and there corresponding options in LS-DY
   + Section_Solid_Peri,
   + Section_Sph,
   + Section_Tshell
-+  Implementaion of a beam with cross-section type 1 which is a tubular cross-section on the BRL-CAD side. I have implemnted the pipe calss to handle this beam element where this element is represented as a pipe premative in BRL-CAD .g database.
++ Implementation of a beam with cross-section type 1 which is a tubular cross-section on the BRL-CAD side. This beam element is represented as a pipe primitive in the BRL-CAD database.  The implementation of the pipe class is also included in this pull request.
 
 
