@@ -68,5 +68,5 @@ Considering the huge amount of commands and there corresponding options in LS-DY
   + Section_Solid_Peri,
   + Section_Sph,
   + Section_Tshell
-+  
++  Implementaion of a beam with cross-section type 1 which is a tubular cross-section on the BRL-CAD side. I have implemnted the pipe calss to handle this beam element where this element is represented as a pipe premative in BRL-CAD .g database.
 
