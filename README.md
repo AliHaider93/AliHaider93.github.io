@@ -10,7 +10,7 @@ The project's goal is to create a file converter from LS-DYNA .k files to BRL-CA
 In the old (k-g) converter there was an issue with converting a .k file related to ifstream::tellg() returning a wrong position in the ASCII file. The solution was to open the input file (.k) as a binary file. The pull request for this bug fix is provided in this link <[patch](https://github.com/BRL-CAD/brlcad/pull/118).
 
 #### LS-DYNA Part Made out only of Triangles: 
-an old piece of code was left in the new k-g converter. in this code when the converter encounters a triangle, it tries to go back to the privous part. This code was erroneous considering that an LS-DYNA part can contain shell elements which could be quadrilaterals Triangles or any other available type of shell elements. Another issue was that if the converter is in the first part and it tries to go back to the privous part it will find nothing and it will attempt to read a piece of memory that is not allocated.
+An old piece of code was left in the new k-g converter. in this code when the converter encounters a triangle, it tries to go back to the privous part. This code was erroneous considering that an LS-DYNA part can contain shell elements which could be quadrilaterals Triangles or any other available type of shell elements. Another issue was that if the converter is in the first part and it tries to go back to the privous part it will find nothing and it will attempt to read a piece of memory that is not allocated.
 The fix is provided in the following link <[update k-g.cpp](https://github.com/BRL-CAD/brlcad/pull/134)
 
 ### Developments:
