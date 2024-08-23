@@ -53,6 +53,20 @@ Considering the huge amount of commands and there corresponding options in LS-DY
 + Implementation of pulley element on the parser's side
 + Implementation of beam source element on the parser's side
 + Implementaion of the bearing element on the parser's side
-+ Implementaion of the \*SECTION_BEAM command on the parser's side
++ Implementaion of the \*SECTION_BEAM command on the parser's side. Here is a list of the available sections
+  + Section_Ale1d,
+  + Section_Ale2d,
+  + Section_Beam,
+  + Section_Beam_AISC,
+  + Section_Discrete,
+  + Section_Fpd,
+  + Section_Point_Source,
+  + Section_Point_source_Mixture,
+  + Section_Seatbelt,
+  + Section_Shell,
+  + Section_Solid,
+  + Section_Solid_Peri,
+  + Section_Sph,
+  + Section_Tshell
 +  
 
