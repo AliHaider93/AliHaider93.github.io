@@ -78,7 +78,8 @@ Considering the huge amount of commands and their corresponding options in LS-DY
 
 
 #### Implementation of the Resultant beam:
-A beam in LS-DYNA can have diffrent kinds of cross section, in order to represent these kinds of beams in the .g database, I am working on developping the sketch and extrude classes. The goal is to implement beam elements with the following types of cross-sections: 
+A beam in LS-DYNA can have diffrent kinds of cross section, in order to represent these kinds of beams in the .g database, I am working on developping the sketch and extrude classes. The code related to this development can be found in the follwoing link <[sketch](https://github.com/BRL-CAD/brlcad/pull/156/files).
+The goal is to implement beam elements with the following types of cross-sections: 
 
 + SECTION_01 : I - Shape
 + SECTION_02 : Channel
